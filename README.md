@@ -18,6 +18,3 @@ const fetchAuth = fetchAuthFactory({
 
 const response = await fetchAuth('http://example.com/api/getSomething')
 ```
-
-
- 
