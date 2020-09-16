@@ -1,6 +1,6 @@
 {
   "name": "kiss-fetch-auth",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Extension to FetchAPI, appends Authorization header in the fetch pipeline",
   "main": "./dist/kiss-fetch-auth-cjs.js",
   "module": "./dist/kiss-fetch-auth.mjs",
@@ -9,8 +9,12 @@
     "build": "del dist && rollup -c && npm run compress-amd",
      "compress-amd": "uglifyjs --compress --mangle -o dist/kiss-fetch-auth-amd.min.js dist/kiss-fetch-auth-amd.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peracto/kiss-fetch-auth.git"
+  },
   "keywords": [],
-  "author": "Peracto <garyranson@hotmail.com>",
+  "author": "Gary Ranson",
   "license": "ISC",
   "devDependencies": {
     "babel-cli": "^6.26.0",

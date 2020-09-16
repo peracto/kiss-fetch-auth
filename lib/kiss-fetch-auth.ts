@@ -3,7 +3,7 @@ interface FetchAuth {
     fetch?: typeof fetch
 }
 
-export default function fetchAuth (options: FetchAuth) {
+export default function fetchAuthFactory (options: FetchAuth) {
     const _fetch = options.fetch || fetch
     const _auth = options.auth
     return async function authenticatedFetch(input?: Request | string, init?: RequestInit): Promise<Response> {
